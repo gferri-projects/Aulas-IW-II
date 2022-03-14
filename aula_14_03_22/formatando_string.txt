@@ -1,0 +1,16 @@
+-- FORMANTANDO STRING -- 
+
+var s = 'string'
+
+s.lengh         // quantos caracteres a string tem
+s.toUpperCase() // tudo para 'MAIÚSCULAS'
+s.toLowerCase() // tudo ´para 'minúsculas'
+s.indexOf()
+s.search()
+s.slice()
+s.substring()
+s.replace()
+s.concat()      // concatenação
+s.charAt()      // numero do indice para retornar
+s.charCodeAt()
+.split()        // transformar string em vetor 

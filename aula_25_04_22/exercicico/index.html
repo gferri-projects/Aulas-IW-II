@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <h1>VOCÊ É BRASILEIRO OU ESTRANGEIRO?</h1>
+    Sigla do pais: <input type="text" name="sigla" id="sigla">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+        function verificar() {
+            var sigla = document.querySelector(`input#sigla`)
+            var sigla = sigla.toUpperCase()
+            var resultado = document.querySelector(`div#resultado`)
+            resultado.innerHTML = `<p>Vivendo em <strong>${sigla}</strong></p>`
+
+            if (sigla == 'BRA'){
+                resultado.innerHTML += (`<p>Você é <strong> brasileiro </strong><p>`)
+            }else{
+                resultado.innerHTML += (`<p>Você é <strong> estrangeiro <strong><p>`)
+                 }
+        }
+        
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  exiber resultado do laço de repetição em uma div  -->
+    <div id="laco"></div>
+
+    <script>
+        var caixa = document.getElementById('laco')
+        caixa.innerHTML = '<ul>'
+        //document.write('<ul>')
+        for (numero = 0; numero <= 10; numero++){
+            //console.log(`Número ==> ${numero}`)
+            caixa.innerHTML += (`<li>Número ==> ${numero}</li> <br>`)
+        }
+        //document.write('</ul>')
+        caixa.innerHTML += '</ul>'
+    </script>
+
+
+
+</body>
+</html>

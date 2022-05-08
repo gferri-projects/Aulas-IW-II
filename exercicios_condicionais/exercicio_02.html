@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+<body>
+    <!--2. As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e
+lhe contrataram para desenvolver um script que calculará os reajustes. Faça um script que recebe
+o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+ Salários até R$ 280,00 (incluindo): aumento de 20%.
+ Salários entre R$ 280,00 e R$ 700,00: aumento de 15%.
+ Salários entre R$ 700,00 e R$ 1500,00: aumento de 10%.
+ Salários de R$ 1500,00 em diante: aumento de 5%.
+Após o aumento ser realizado, informe na tela:
+ O salário antes do reajuste;
+ O percentual de aumento aplicado;
+ O valor do aumento;
+ O novo salário, após o aumento.-->
+
+<script>
+    var pgt = prompt('Digite o valor do seu salário:')
+    var salario = parseInt(pgt)
+
+    if (salario <= 280.00){
+        var x = salario * 0.20
+        var res = x + salario
+        alert(`Salário antes do reajuste: ${pgt} \n Percetual de aumento aplicado: 20% \n Valor do aumento: ${x},00 \n Salário pós reajuste (atual): ${res}`)
+    }
+
+    if ((salario >= 280.00) && (salario <= 700.00)){
+        var x = salario * 0.15
+        var res = x + salario
+        alert(`Salário antes do reajuste: ${pgt} \n Percetual de aumento aplicado: 15% \n Valor do aumento: ${x},00 \n Salário pós reajuste (atual): ${res}`)
+    }
+
+    if ((salario >= 700.00) && (salario <= 1500.00)){
+        var x = salario * 0.10
+        var res = x + salario
+        alert(`Salário antes do reajuste: ${pgt} \n Percetual de aumento aplicado: 10% \n Valor do aumento: ${x},00 \n Salário pós reajuste (atual): ${res}`)
+    }
+
+    if (salario >= 1500.00){
+        var x = salario * 0.5
+        var res = x + salario
+        alert(`Salário antes do reajuste: ${pgt} \n Percetual de aumento aplicado: 5% \n Valor do aumento: ${x},00 \n Salário pós reajuste (atual): ${res}`)
+
+    }
+
+</script>
+
+</body>
+</html>

@@ -15,11 +15,34 @@
         var bx = Number(prompt('Digite o valor de "b": '))
         var c = Number(prompt('Digite o valor de "c": '))
 
+        // COMPLEMENTO DA AULA 09/05, MAIS INTRODUÇÃO DE FUNÇÕES E VETORES
         var delta = Math.pow(bx , 2) - 4 * ax * c
-        var x1 = (-bx + (Math.sqrt(delta))) / 2 * ax
-        var x2 = (-bx - (Math.sqrt(delta))) / 2 * ax
+        if(delta < 0 ){
+            alert(`RESULTADO: \nSua equação: ${ax}² + ${bx} + ${c} \nDelta: ${delta} \nNão existem raízes pois o delta é negativo!!`)
+        }else{
+            if(delta == 0){
+                var raiz = calcula(b,delta,a)
+                console.log(`RESULTADO: \nSua equação: ${ax}² + ${bx} + ${c} \nDelta = ${delta} \nX' = ${raiz[0]} \nX'' = ${raiz[1]} \nCom delta igual, X' e X'' são iguais!!`)
 
-        alert(`RESULTADO: \nSua equação: ${ax}² + ${bx} + ${c} \nDelta = ${delta} \nX' = ${x1} \nX'' = ${x2}`)
+            }else{
+                var x1 = (-bx + (Math.sqrt(delta))) / 2 * ax
+                var x2 = (-bx - (Math.sqrt(delta))) / 2 * ax
+
+                alert(`RESULTADO: \nSua equação: ${ax}² + ${bx} + ${c} \nDelta = ${delta} \nX' = ${x1} \nX'' = ${x2}`)
+            }
+        }
+
+       function calcula(b,delta,a){
+             var x1 = (-bx + (Math.sqrt(delta))) / 2 * ax
+             var x2 = (-bx - (Math.sqrt(delta))) / 2 * ax
+             var resultado = [x1,x2]
+
+             return resultado
+           
+       }
+
+
+       
 
     </script>
    

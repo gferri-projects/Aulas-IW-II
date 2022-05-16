@@ -19,10 +19,10 @@
         var anos = 0
 
         do{
-            a = a+(a * (3/100))
-            b = b+(b * (1.5/100))
+            a = a*1.03
+            b = b*1.015
             anos++
-        }while(b>a)
+        }while(a<=b)
 
         console.log(`${anos} anos para que a população do país A ultrapasse a população do país B.`)
     </script>

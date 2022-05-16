@@ -12,18 +12,18 @@
 
     <script>
         var a = prompt('População do país A: ')
-        var taxa_a = prompt('Digte a taxa de crescimento do país A: ')
         var b = prompt('População do país B: ')
+        var taxa_a = prompt('Digte a taxa de crescimento do país A: ') 
         var taxa_b = prompt('Digte a taxa de crescimento do país B: ')
         var anos = 0
 
         do{
-            a = a+(a * (taxa_a/100))
-            b = b+(b * (taxa_b/100))
+            a = a*taxa_a
+            b = b*taxa_b
             anos++
-        }while(b>a)
+        }while(a<=b)
 
-        console.log(`${anos} anos para que a população do país A ultrapasse o país B.`)
+        console.log(`${anos} anos para que a população do país A ultrapasse a população do país B.`)
     </script>
     
 </body>

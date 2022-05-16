@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+</head>
+<body>
+    <script>
+        var num = [3,6,9]
+        console.log(num) //mostrar vetor
+        console.log(num[1]) //mostrar posição de um vetor
+        console.log('Tipo da variável => ', typeof(num)) //mostrar tipo da variável
+        num.push(12) //adicionar mais um valor ao vetor na últuma posição
+        console.log(num) //mostrar vetor após o push
+        console.log('Tamanho do vetor => ',num.length) //lenght mostra o tamanho do vetor (array)
+        console.log(num.sort()) //ordenar posições do vetor em ordem crescente
+        console.log(num)
+        console.log('-------------------------')
+
+        var teste = [5,8,4]
+        console.log(teste)
+        console.log(teste.sort())
+        console.log(teste)
+
+        var tam = teste.length
+        console.log('-------------------------')
+
+        for(i = 0;i<=tam-1;i++){
+            console.log('Posição i =',i, ' valor => ',teste[i])
+        }
+
+        console.log('-------------------------')
+
+        for(var i in teste){
+            console.log('Posição i = ',i,' valor => ',teste[i])
+        }
+
+        console.log('Posição do num 8 no indice do vetor => ',teste.indexOf(8))
+
+        
+    </script>
+    
+</body>
+</html>

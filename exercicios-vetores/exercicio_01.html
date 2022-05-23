@@ -9,10 +9,13 @@
 <body>
     <script>
         do
-            var num = [prompt('Digite números aleatórios, condição de parada é o número 0.')]
+            let num = [prompt('Digite números aleatórios, condição de parada é o número 0.')]
         while(num>0)
-
-        alert('Os números que você digitou em forma crecente ficarão assim ==> '+ num.sort())
+            let numeros = num.sort(function(a, b){
+                return a - b
+            })
+            console.log(numeros)
+         
     </script>
     
 </body>
